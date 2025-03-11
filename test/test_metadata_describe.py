@@ -14,15 +14,16 @@ class TestDescribeDataframe(unittest.TestCase):
         # Load dataframe
         df = pd.read_csv('./data/clients.csv')
         # Feed in the dataframe and check that it gives the requested medication summary data
-        summary_df = metadata_describe(df, ["statin"])
-        self.assertTrue("statin" in summary_df.index)
+        summary_df = metadata_describe(df)
+        self.assertTrue("statin" in summary_df.columns)
 
     def test_edge(self):
         # Load dataframe
         df = pd.read_csv('./data/clients.csv')
         # Feed in the dataframe and check that it throws a ValueError when an invalid medication is requested
-        with self.assertRaises(ValueError):
-            summary_df = metadata_describe(df, ["Flareon"])
+        with self.assertRaises(KeyError):
+            summary_df = metadata_describe(df)
+            flareon = summary_df["Flareon"].tolist()
 
 if __name__ == '__main__':
     unittest.main()
