@@ -82,5 +82,28 @@ class TestGetFoodInfo(unittest.TestCase):
         with self.assertRaises(TypeError):
             df = get_food_info(123.0)
 
+    def test_pattern(self):
+        # Test every consecutive pair of valid food IDs
+        data_df = pd.read_csv('data/annotated_food_matches.csv', index_col=False)
+
+        for i in range(len(data_df['food_id']) - 1):
+            # Generate reference dataframe
+            ref_df = pd.DataFrame({
+                'food_id': data_df.loc[i:i+1, 'food_id'],
+                'food_name': data_df.loc[i:i+1, 'food_name'],
+                'genus': data_df.loc[i:i+1, 'genus'],
+                'species': data_df.loc[i:i+1, 'species'],
+                'food_group': data_df.loc[i:i+1, 'food_group'],
+                'food_subgroup': data_df.loc[i:i+1, 'food_subgroup'],
+            })
+            ref_df.index = range(1, len(ref_df) + 1)
+
+            # Test a valid 1D np.ndarray with duplicate IDs and check that the output is not duplicate
+            df = get_food_info(data_df.loc[i:i+1, 'food_id'].values)
+            self.assertTrue(df.equals(ref_df))
+
+        with self.assertRaises(TypeError):
+            df = get_food_info(123.0)
+
 if __name__ == '__main__':
     unittest.main()

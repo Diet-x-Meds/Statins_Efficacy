@@ -45,8 +45,9 @@ def get_food_info(food_ids):
         elif len(invalid_food_ids) >= 2:
             raise KeyError(f'{", ".join(invalid_food_ids[:-1])} and {invalid_food_ids[-1]} are not valid food IDs')
 
-    # Filter for the specified food_ids
+    # Filter for the specified food_ids, then sort in ascending order of food ID
     df_filtered = df.loc[list(sanitized_food_id_set), :]
+    df_filtered.sort_values(by=['food_id'], inplace=True)
     # Renumber the indices of the filtered df
     df_filtered.index = pd.RangeIndex(1, len(df_filtered.index) + 1, 1)
     
