@@ -1,20 +1,15 @@
 # Made with help from ChatGPT
-def metadata_describe(df,drugs_of_interest=[]):
-    ''' This function takes in the provided dataframe (in our case, the MEDI-prepared metacardis data)
-        and it plots relavent plots describing the data, as well as outputting a dataframe 
-         containing the concatinated describe functions for each column.'''
+def metadata_describe(df):
+    '''This function takes in the provided dataframe (in our case, the MEDI-prepared metacardis data) and outputs a dataframe 
+       containing descriptive statistics for numerical, categorical, and binary medication columns.
+       The output DataFrame has statistics as rows and original column names as columns.'''
 
     import pandas as pd
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-    import matplotlib.ticker as mticker  
-       
+    
     # Store original column names for reference
     original_columns = df.columns.copy()
     # Standardize column names
     df.columns = df.columns.str.lower().str.replace(" ", "_")
-    drugs_of_interest = [s.lower() for s in drugs_of_interest]
-    drugs_of_interest = [s.replace(" ", "_") for s in drugs_of_interest]
     
     # Remove client ID column if present
     df = df.loc[:, df.nunique() > 1]
@@ -24,44 +19,24 @@ def metadata_describe(df,drugs_of_interest=[]):
     # Identify binary medication columns (0/1 values)
     medication_cols = [col for col in df.select_dtypes(include=['number']).columns if df[col].nunique() == 2]
     numerical_cols = [col for col in df.select_dtypes(include=['number']).columns if col not in medication_cols]
-    
-    # Store descriptive statistics
-    summary_df = df[numerical_cols].describe().T
 
-    # Mapping standardized names back to original names for labeling purposes
-    col_name_map = dict(zip(df.columns, original_columns.str.replace("_"," ")))
-    
-    '''# Visualizations
-    # Bar chart for medication usage
-    medication_usage = df[medication_cols].mean() * 100
-    plt.figure(figsize=(12,6))
-    colors = ['crimson' if col in drugs_of_interest else 'steelblue' for col in medication_usage.index]
-    medication_usage.sort_values().plot(kind='barh', color=colors, edgecolor='black', alpha=0.8)
-    plt.xlabel('Percentage of Patients Taking Medication', fontsize=12)
-    plt.title('Medication Usage Among Patients', fontsize=14)
-    plt.xticks(rotation=0)
-    plt.gca().xaxis.set_major_formatter(mticker.PercentFormatter())
-    plt.yticks(ticks=range(len(medication_usage)), labels=[col_name_map.get(col, col) for col in medication_usage.index])
-    plt.grid(axis='x', linestyle='--', alpha=0.7)
-    plt.show()
+    # Descriptive statistics for numerical columns
+    numerical_summary = df[numerical_cols].describe().T
 
-    # histograms
-    for col in numerical_cols:
-        if col != 'id':
-            plt.figure(figsize=(6,4))
-            sns.histplot(df[col].dropna(), kde=True, bins=30, color="royalblue", alpha=0.7)
-            plt.title(f'Distribution of {col_name_map.get(col, col)}', fontsize=14)
-            plt.xlabel(col_name_map.get(col, col))
-            plt.ylabel('Frequency')
-            plt.grid(axis='y', linestyle='--', alpha=0.7)
-            plt.show()
-    # pie charts 
-    for col in categorical_cols:
-        if col != 'id':
-            plt.figure(figsize=(6,4))
-            df[col].value_counts().plot.pie(autopct='%1.1f%%', startangle=90, cmap='Set3', wedgeprops={'edgecolor': 'black'}) # cmap='Set3')
-            plt.title(f'Distribution of {col_name_map.get(col, col)}', fontsize=14)
-            plt.ylabel('')
-            plt.show()
-    '''
-    return summary_df
+    # Descriptive statistics for categorical columns
+    categorical_summary = pd.DataFrame(index=categorical_cols)
+    categorical_summary["count"] = df[categorical_cols].count()
+    categorical_summary["unique"] = df[categorical_cols].nunique()
+    categorical_summary["top"] = df[categorical_cols].mode().iloc[0]  # Most frequent category
+    categorical_summary["freq"] = df[categorical_cols].apply(lambda x: x.value_counts().iloc[0] if x.nunique() > 0 else 0)
+
+    # Descriptive statistics for medication columns (binary 0/1)
+    medication_summary = pd.DataFrame(index=medication_cols)
+    medication_summary["count"] = df[medication_cols].count()
+    medication_summary["mean (proportion)"] = df[medication_cols].mean()  # Fraction of patients with 1
+    medication_summary["sum (total 1s)"] = df[medication_cols].sum()  # Total number of patients taking medication
+
+    # Combine all summaries
+    summary_df = pd.concat([numerical_summary, categorical_summary, medication_summary], axis=0)
+
+    return summary_df.T  # Transpose so statistics become rows and column names become variables
