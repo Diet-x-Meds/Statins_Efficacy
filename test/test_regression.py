@@ -10,7 +10,7 @@ class TestRegression(unittest.TestCase):
         try:
             formula_string = "{dependent_feature} ~ C(Gender) + Age + BMI + C(Nationality) +" \
             "C(Status) + Activity + Microbial_load + Statin*{independent_feature}"
-            result = linear_regression_results(['HMG'], ['Ruminococcus.sp..CAG.177_CAG00760'],
+            result = linear_regression_results(['HMG'], ['clostridium_bolteae_cag00008'],
                               formula_string, df, df, metabolite_anns=False)
         except Exception as e:
             self.fail(f"linear_regression_results raised an exception: {e}")
@@ -25,7 +25,7 @@ class TestRegression(unittest.TestCase):
         formula_string = "{dependent_feature} ~ C(Gender) + Age + BMI + C(Nationality) +" \
             "C(Status) + Activity + Microbial_load + Statin*{independent_feature}"
 
-        associations = linear_regression_results(['HMG'], ['Ruminococcus.sp..CAG.177_CAG00760'],
+        associations = linear_regression_results(['HMG'], ['clostridium_bolteae_cag00008'],
                               formula_string, df, df, metabolite_anns=False)
         
         # Check if all expected columns exist in associations DataFrame

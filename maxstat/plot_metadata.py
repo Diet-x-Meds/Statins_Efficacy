@@ -29,7 +29,7 @@ def plot_metadata(df):
     # Bar chart for medication usage
     medication_usage = df[medication_cols].mean() * 100
     plt.figure(figsize=(12,6))
-    # colors = ['crimson' if col in drugs_of_interest else 'steelblue' for col in medication_usage.index]
+    colors = ['steelblue' for col in medication_usage.index]
     medication_usage.sort_values().plot(kind='barh', color=colors, edgecolor='black', alpha=0.8)
     plt.xlabel('Percentage of Patients Taking Medication', fontsize=12)
     plt.title('Medication Usage Among Patients', fontsize=14)
