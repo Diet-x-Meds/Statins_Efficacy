@@ -1,0 +1,562 @@
+food_id,food_name,genus,species,food_group,food_subgroup
+1,Ashitaba,Angelica,keiskei,Herbs and Spices,Herbs
+2,Savoy Cabbage,Brassica,oleracea,Vegetables,Cabbages
+4,Kiwifruit,Actinidia,chinensis,Fruits,Tropical fruits
+5,Red-skinned Onion,Allium,haematochiton,Vegetables,Onion-family vegetables
+6,Onion,Allium,cepa,Vegetables,Onion-family vegetables
+8,Garlic,Allium,sativum,Herbs and Spices,Herbs
+9,Chives,Allium,schoenoprasum,Herbs and Spices,Herbs
+10,Lemon Verbena,Aloysia,triphylla,Herbs and Spices,Herbs
+11,Cashew Nut,Anacardium,occidentale,Nuts,Nuts
+12,Pineapple,Ananas,comosus,Fruits,Tropical fruits
+13,Dill,Anethum,graveolens,Herbs and Spices,Herbs
+14,Custard Apple,Annona,reticulata,Fruits,Tropical fruits
+15,Wild Celery,Apium,graveolens,Herbs and Spices,Spices
+16,Peanut,Arachis,hypogaea,Nuts,Nuts
+17,Greater Burdock,Arctium,lappa,Vegetables,Root vegetables
+18,Horseradish,Armoracia,rusticana,Herbs and Spices,Spices
+19,Tarragon,Artemisia,dracunculus,Herbs and Spices,Herbs
+20,Mugwort,Artemisia,vulgaris,Herbs and Spices,Herbs
+21,Asparagus,Asparagus,officinalis,Vegetables,Shoot vegetables
+22,Oat,Avena,sativa,Cereals and cereal products,Cereals
+23,Star Fruit,Averrhoa,carambola,Fruits,Tropical fruits
+24,Brazil Nut,Bertholletia,excelsa,Nuts,Nuts
+25,Beet,Beta,vulgaris,Vegetables,Leaf vegetables
+26,Borage,Borago,officinalis,Herbs and Spices,Oilseed crops
+27,Brown Mustard,Brassica,juncea,Vegetables,Cabbages
+28,Rutabaga,Brassica,napus,Vegetables,Root vegetables
+29,Rapeseed,Brassica,napus,Vegetables,Root vegetables
+30,"Wild Cabbage Cultivar (Kale, Red Cabbage etc.)",Brassica,oleracea,Vegetables,Cabbages
+31,Cauliflower,Brassica,oleracea,Vegetables,Cabbages
+32,Brussels Sprout,Brassica,oleracea,Vegetables,Cabbages
+33,Kohlrabi,Brassica,oleracea,Vegetables,Root vegetables
+34,Broccoli,Brassica,oleracea,Vegetables,Cabbages
+35,Chinese Cabbage,Brassica,rapa,Vegetables,Cabbages
+36,Turnip,Brassica,rapa,Herbs and Spices,Herbs
+37,Pigeon Pea,Cajanus,cajan,Pulses,Peas
+38,Tea,Camellia,sinensis,Teas,Teas
+39,Capers,Capparis,spinosa,Herbs and Spices,Spices
+40,"Pepper Cultivar (Bell, Cayenne, Jalapeño, etc.)",Capsicum,annuum,Vegetables,Fruit vegetables
+41,Papaya,Carica,papaya,Fruits,Tropical fruits
+42,Safflower,Carthamus,tinctorius,Herbs and Spices,Oilseed crops
+43,Caraway,Carum,carvi,Herbs and Spices,Spices
+44,Pecan Nut,Carya,illinoinensis,Nuts,Nuts
+45,Chestnut,Castanea,,Nuts,Nuts
+46,Roman Chamomile,Chamaemelum,nobile,Herbs and Spices,Herbs
+47,Chickpea,Cicer,arietinum,Pulses,Peas
+48,Endive,Cichorium,endivia,Vegetables,Leaf vegetables
+49,Chicory,Cichorium,intybus,Vegetables,Root vegetables
+50,Chinese Cinnamon,Cinnamomum,aromaticum,Herbs and Spices,Spices
+51,Ceylon Cinnamon,Cinnamomum,verum,Herbs and Spices,Spices
+52,Watermelon,Citrullus,lanatus,Gourds,Gourds
+53,Key Lime,Citrus,Citrus x aurantiifolia,Fruits,Citrus
+54,Lemon,Citrus,Citrus x limon,Fruits,Citrus
+55,Pomelo,Citrus,maxima,Fruits,Citrus
+56,Mandarin Orange,Citrus,reticulata,Fruits,Citrus
+57,Sweet Orange,Citrus,sinensis,Fruits,Citrus
+58,Coffee,Coffea,,Coffee and coffee products,Coffee
+59,Arabica Coffee,Coffea,arabica,Coffee and coffee products,Coffee
+60,Robusta Coffee,Coffea,canephora,Coffee and coffee products,Coffee
+61,Coriander,Coriandrum,sativum,Herbs and Spices,Herbs
+62,Common Hazel,Corylus,avellana,Nuts,Nuts
+63,Saffron,Crocus,sativus,Herbs and Spices,Spices
+64,Muskmelon,Cucumis,melo,Gourds,Gourds
+65,Cucumber,Cucumis,sativus,Gourds,Gourds
+66,"Cucurbita sp. (Squash, Pumpkin, Gourd etc.)",Cucurbita,,Gourds,Gourds
+67,Cumin,Cuminum,cyminum,Herbs and Spices,Spices
+68,Turmeric,Curcuma,longa,Herbs and Spices,Spices
+69,Quince,Cydonia,oblonga,Fruits,Pomes
+70,Lemongrass,Cymbopogon,citratus,Herbs and Spices,Herbs
+71,Artichoke,Cynara,cardunculus,Vegetables,Shoot vegetables
+72,Wild Carrot,Daucus,carota,Vegetables,Root vegetables
+73,Japanese Persimmon,Diospyros,kaki,Fruits,Tropical fruits
+75,Black Crowberry,Empetrum,nigrum,Fruits,Berries
+76,Loquat,Eriobotrya,japonica,Fruits,Tropical fruits
+77,Arugula,Eruca,vesicaria,Vegetables,Leaf vegetables
+78,Wax Apple,Eugenia,,Fruits,Tropical fruits
+79,Buckwheat,Fagopyrum,esculentum,Cereals and cereal products,Cereals
+80,Tatar Buckwheat,Fagopyrum,tataricum,Cereals and cereal products,Cereals
+81,Common Fig,Ficus,carica,Fruits,Other fruits
+82,Fennel,Anethum,foeniculum,Herbs and Spices,Herbs
+83,Strawberry,Fragaria,Fragaria x ananassa,Fruits,Berries
+85,Soybean,Glycine,max,Soy,Soy
+86,Sunflower,Helianthus,annuus,Herbs and Spices,Oilseed crops
+87,Sea Buckthorn,Hippophae,rhamnoides,Fruits,Berries
+88,Barley,Hordeum,vulgare,Cereals and cereal products,Cereals
+89,Hyssop,Dracocephalum,officinale,Herbs and Spices,Herbs
+90,Star Anise,Illicium,verum,Herbs and Spices,Spices
+91,Water Spinach,Ipomoea,aquatica,Vegetables,Leaf vegetables
+92,Sweet Potato,Ipomoea,batatas,Vegetables,Tubers
+93,Black Walnut,Juglans,nigra,Nuts,Nuts
+94,English Walnut,Juglans,regia,Nuts,Nuts
+95,Lettuce,Lactuca,sativa,Vegetables,Leaf vegetables
+96,Grass Pea,Lathyrus,sativus,Pulses,Peas
+97,Sweet Bay,Laurus,nobilis,Herbs and Spices,Herbs
+98,Lentils,Lens,culinaris,Pulses,Lentils
+99,Garden Cress,Lepidium,sativum,Vegetables,Leaf vegetables
+100,Lovage,Levisticum,officinale,Herbs and Spices,Herbs
+101,Flax,Linum,usitatissimum,Herbs and Spices,Oilseed crops
+103,Lychee,Litchi,chinensis,Fruits,Tropical fruits
+104,Lupine,Lupinus,,Pulses,Other pulses
+105,Apple,Malus,pumila,Fruits,Pomes
+106,Mango,Mangifera,indica,Fruits,Tropical fruits
+107,German Chamomile,Matricaria,chamomilla,Herbs and Spices,Herbs
+108,Lemon Balm,Melissa,officinalis,Herbs and Spices,Herbs
+109,Mint,Mentha,,Herbs and Spices,Herbs
+110,Eau De Cologne Mint,Mentha,aquatica,Herbs and Spices,Herbs
+111,Wild Mint,Mentha,arvensis,Herbs and Spices,Herbs
+112,Spearmint,Mentha,spicata,Herbs and Spices,Herbs
+113,Peppermint,Mentha,Mentha x piperita,Herbs and Spices,Herbs
+114,Medlar,Mespilus,germanica,Fruits,Pomes
+115,Bitter Melon,Momordica,charantia,Gourds,Gourds
+116,Mulberry,Morus,,Fruits,Berries
+117,Black Mulberry,Morus,nigra,Fruits,Berries
+118,Nutmeg,Myristica,fragrans,Herbs and Spices,Spices
+119,Sweet Basil,Ocimum,basilicum,Herbs and Spices,Herbs
+120,Evening Primrose,Oenothera,biennis,Herbs and Spices,Oilseed crops
+121,Olive,Olea,europaea,Vegetables,Fruit vegetables
+122,Sweet Marjoram,Origanum,majorana,Herbs and Spices,Herbs
+123,Marjoram,Origanum,onites,Herbs and Spices,Herbs
+124,Oregano,Origanum,vulgare,Herbs and Spices,Herbs
+125,Rice,Oryza,sativa,Cereals and cereal products,Cereals
+126,Millet,Panicum,miliaceum,Cereals and cereal products,Cereals
+127,Poppy,Papaver,,Herbs and Spices,Oilseed crops
+128,Passion Fruit,Passiflora,edulis,Fruits,Tropical fruits
+129,Parsnip,Pastinaca,sativa,Vegetables,Root vegetables
+130,Avocado,Persea,americana,Vegetables,Fruit vegetables
+131,Parsley,Petroselinum,crispum,Herbs and Spices,Herbs
+132,Scarlet Runner Bean,Phaseolus,coccineus,Pulses,Beans
+133,Lima Bean,Phaseolus,lunatus,Pulses,Beans
+134,Common Bean,Phaseolus,vulgaris,Pulses,Beans
+135,Date,Phoenix,dactylifera,Fruits,Other fruits
+136,Black Chokecherry,Aronia,melanocarpa,Fruits,Berries
+137,Anise,Pimpinella,anisum,Herbs and Spices,Herbs
+138,Pine Nut,Pinus,,Nuts,Nuts
+139,Black Pepper,Piper,nigrum,Herbs and Spices,Spices
+140,Pistachio,Pistacia,vera,Nuts,Nuts
+141,Pea,Pisum,sativum,Pulses,Peas
+142,Purslane,Portulaca,oleracea,Herbs and Spices,Herbs
+143,"Prunus sp. (Plum, Cherry, Peach, Apricot etc.)",Prunus,,Fruits,Drupes
+144,Apricot,Prunus,armeniaca,Fruits,Drupes
+145,Sweet Cherry,Prunus,avium,Fruits,Drupes
+146,Sour Cherry,Prunus,cerasus,Fruits,Drupes
+147,European Plum,Prunus,domestica,Fruits,Drupes
+148,Almond,Prunus,dulcis,Nuts,Nuts
+149,Peach,Prunus,persica,Fruits,Drupes
+150,Guava,Psidium,guajava,Fruits,Tropical fruits
+151,Pomegranate,Punica,granatum,Fruits,Tropical fruits
+152,Pear,Pyrus,communis,Fruits,Pomes
+153,Radish,Raphanus,sativus,Vegetables,Root vegetables
+154,Rhubarb,Rheum,rhabarbarum,Vegetables,Stalk vegetables
+155,Blackcurrant,Ribes,nigrum,Fruits,Berries
+156,Redcurrant,Ribes,rubrum,Fruits,Berries
+157,Gooseberry,Ribes,uva-crispa,Fruits,Berries
+158,Watercress,Ribes,uva-crispa,Herbs and Spices,Herbs
+159,Rosemary,Salvia,rosmarinus,Herbs and Spices,Herbs
+160,"Rubus sp. (Blackberry, Raspberry etc.)",Rubus,,Fruits,Berries
+161,Cloudberry,Rubus,chamaemorus,Fruits,Berries
+162,Red Raspberry,Rubus,idaeus,Fruits,Berries
+163,Black Raspberry,Rubus,occidentalis,Fruits,Berries
+164,Sorrel,Rumex,acetosa,Herbs and Spices,Herbs
+165,Common Sage,Salvia,officinalis,Herbs and Spices,Herbs
+166,Elderberry,Sambucus,nigra,Fruits,Berries
+167,Summer Savory,Satureja,hortensis,Herbs and Spices,Herbs
+168,Winter Savory,Satureja,montana,Herbs and Spices,Herbs
+169,Rye,Secale,cereale,Cereals and cereal products,Cereals
+170,Sesame,Sesamum,indicum,Herbs and Spices,Oilseed crops
+171,Tomato,Solanum,lycopersicum,Vegetables,Fruit vegetables
+172,Cherry Tomato,Solanum,lycopersicum,Vegetables,Fruit vegetables
+173,Septoria Leaf Spot On Tomatoes,Septoria,lycopersici,Vegetables,Fruit vegetables
+174,Eggplant,Solanum,melongena,Vegetables,Fruit vegetables
+175,Potato,Solanum,tuberosum,Vegetables,Tubers
+176,Rowanberry,Sorbus,aucuparia,Fruits,Berries
+177,Sorghum,Sorghum,bicolor,Cereals and cereal products,Cereals
+178,Spinach,Spinacia,oleracea,Vegetables,Leaf vegetables
+179,Cloves,Syzygium,aromaticum,Herbs and Spices,Spices
+180,Tamarind,Tamarindus,indica,Fruits,Tropical fruits
+181,Dandelion,Taraxacum,officinale,Herbs and Spices,Herbs
+182,Cocoa Bean,Theobroma,cacao,Cocoa and cocoa products,Cocoa
+183,Thyme,Thymus,vulgaris,Herbs and Spices,Herbs
+184,Linden,Tilia,,Herbs and Spices,Herbs
+185,Littleleaf Linden,Tilia,cordata,Herbs and Spices,Herbs
+186,Fenugreek,Trigonella,foenum-graecum,Herbs and Spices,Herbs
+187,Common Wheat,Triticum,aestivum,Cereals and cereal products,Cereals
+188,"Vaccinium sp. (Blueberry, Cranberry, Huckleberry etc.)",Vaccinium,,Fruits,Berries
+189,Lowbush Blueberry,Vaccinium,angustifolium,Fruits,Berries
+190,Sparkleberry,Vaccinium,arboreum,Fruits,Berries
+191,Highbush Blueberry,Vaccinium,corymbosum,Fruits,Berries
+192,Cranberry,Vaccinium,macrocarpon,Fruits,Berries
+193,Bilberry,Vaccinium,myrtillus,Fruits,Berries
+194,Lingonberry,Vaccinium,vitis-idaea,Fruits,Berries
+195,Vanilla,Vanilla,,Herbs and Spices,Spices
+196,Common Vervain,Verbena,officinalis,Herbs and Spices,Herbs
+197,Broad Bean,Vicia,faba,Pulses,Beans
+198,Azuki Bean,Vigna,angularis,Pulses,Beans
+199,Urad Dal,Vigna,mungo,Pulses,Beans
+200,Mung Bean,Vigna,radiata,Pulses,Beans
+201,Rice Bean,Vigna,umbellata,Pulses,Beans
+202,Cowpea,Vigna,unguiculata,Pulses,Peas
+203,Muscadine,Vitis,rotundifolia,Fruits,Berries
+204,Wine Grape,Vitis,vinifera,Fruits,Berries
+205,Corn,Zea,mays,Cereals and cereal products,Cereals
+206,Ginger,Zingiber,officinale,Herbs and Spices,Spices
+207,Arctic Raspberry,Rubus,arcticus,Fruits,Berries
+208,Banana,Musa,acuminata,Fruits,Tropical fruits
+209,Bayberry,Myrica,,Fruits,Berries
+210,Elliott's Blueberry,Vaccinium,elliottii,Fruits,Berries
+211,Velvetleaf Blueberry,Vaccinium,myrtilloides,Fruits,Berries
+212,Bog Blueberry,Vaccinium,uliginosum,Fruits,Berries
+213,Buffalo Currant,Ribes,aureum,Fruits,Berries
+214,Celeriac,Apium,graveolens,Vegetables,Root vegetables
+215,Celery,Apium,graveolens,Vegetables,Stalk vegetables
+216,Chinese Chives,Allium,tuberosum,Herbs and Spices,Herbs
+217,Small Cranberry,Vaccinium,oxycoccos,Fruits,Berries
+218,Deerberry,Vaccinium,stamineum,Fruits,Berries
+219,Ginseng,Panax,ginseng,Herbs and Spices,Spices
+220,Cascade Blueberry,Vaccinium,deliciosum,Fruits,Berries
+221,Oval-leaf Blueberry,Vaccinium,ovalifolium,Fruits,Berries
+222,Evergreen Huckleberry,Vaccinium,ovatum,Fruits,Berries
+223,Red Huckleberry,Vaccinium,parvifolium,Fruits,Berries
+224,Longan,Dimocarpus,longan,Fruits,Tropical fruits
+225,Macadamia Nut,Macadamia,tetraphylla,Nuts,Nuts
+226,Onion,Allium,cepa,Vegetables,Onion-family vegetables
+227,Summer Grape,Vitis,aestivalis,Fruits,Berries
+228,Fox Grape,Vitis,labrusca,Fruits,Berries
+229,Nectarine,Prunus,persica,Fruits,Drupes
+230,Peach,Prunus,persica,Fruits,Drupes
+231,"Pepper Cultivar (Amarillo, Lemon Drop etc.)",Capsicum,baccatum,Vegetables,Fruit vegetables
+232,"Pepper Cultivar (Habanero, Scotch Bonnet etc.)",Capsicum,chinense,Vegetables,Fruit vegetables
+233,Capsicum sp. (Pepper),Capsicum,,Vegetables,Fruit vegetables
+234,Rambutan,Nephelium,lappaceum,Fruits,Tropical fruits
+235,Asian Wild Rice,Oryza,rufipogon,Cereals and cereal products,Cereals
+236,Southern Wild Rice,Zizania,aquatica,Cereals and cereal products,Cereals
+237,Swiss Chard,Beta,vulgaris,Vegetables,Leaf vegetables
+238,Lemon Thyme,Thymus,pulegioides,Herbs and Spices,Herbs
+239,"Wild Cabbage Cultivar (Kale, Red Cabbage etc.)",Brassica,oleracea,Vegetables,Cabbages
+240,Japanese Walnut,Juglans,ailanthifolia,Nuts,Nuts
+241,Welsh Onion,Allium,fistulosum,Herbs and Spices,Herbs
+242,Hard Wheat,Triticum,turgidum,Cereals and cereal products,Cereals
+243,Shallot,Allium,ascalonicum,Vegetables,Onion-family vegetables
+244,Arugula,Eruca,vesicaria,Vegetables,Leaf vegetables
+245,Carrot,Daucus,carota,Vegetables,Root vegetables
+247,"Wild Cabbage Cultivar (Kale, Red Cabbage etc.)",Brassica,oleracea,Vegetables,Cabbages
+248,Northern Half-high Blueberry,Vaccinium,Vaccinium angustifolium x Vaccinium corymbosum,Fruits,Berries
+249,Leaf Celery,Apium,graveolens,Herbs and Spices,Herbs
+250,Chicory,Cichorium,intybus,Vegetables,Leaf vegetables
+251,Komatsuna,Brassica,rapa,Vegetables,Cabbages
+252,Bok Choy,Brassica,rapa,Vegetables,Cabbages
+253,Napa Cabbage,Brassica,rapa,Vegetables,Cabbages
+254,Chicory,Cichorium,intybus,Vegetables,Root vegetables
+255,Grapefruit,Citrus,Citrus x paradisi,Fruits,Citrus
+256,Grapefruit,Citrus,Citrus x paradisi,Fruits,Citrus
+258,Gai Lan,Brassica,oleracea,Vegetables,Cabbages
+259,Italian Oregano,Origanum,Origanum x majoricum,Herbs and Spices,Herbs
+261,Daikon,Raphanus,sativus,Vegetables,Root vegetables
+262,Radish,Raphanus,sativus,Vegetables,Root vegetables
+263,Radish,Raphanus,sativus,Vegetables,Root vegetables
+266,Pineapple Sage,Salvia,elegans,Herbs and Spices,Herbs
+267,Skunk Currant,Ribes,glandulosum,Fruits,Berries
+280,Abalone,Haliotis,,Aquatic foods,Mollusks
+281,Sacred Garlic Pear,Crateva,religiosa,Fruits,Tropical fruits
+282,Acerola,Malpighia,emarginata,Fruits,Tropical fruits
+283,Acorn,Quercus,,Nuts,Nuts
+284,Winter Squash,Cucurbita,maxima,Gourds,Gourds
+285,Agar,Eucheuma,,Aquatic foods,Seaweed
+286,Red King Crab,Paralithodes,camtschaticus,Aquatic foods,Crustaceans
+287,Alfalfa,Medicago,sativa,Herbs and Spices,Herbs
+288,Allspice,Pimenta,dioica,Herbs and Spices,Spices
+289,Amaranth,Amaranthus,,Herbs and Spices,Herbs
+290,Broadleaf Arrowhead,Sagittaria,latifolia,Vegetables,Tubers
+291,Arrowroot,Maranta,arundinacea,Vegetables,Tubers
+292,Asian Pear,Pyrus,pyrifolia,Fruits,Pomes
+293,Atlantic Herring,Clupea,harengus,Aquatic foods,Fishes
+294,Atlantic Mackerel,Scomber,scombrus,Aquatic foods,Fishes
+295,Painted Comber,Serranus,scriba,Aquatic foods,Fishes
+296,Pollack,Pollachius,pollachius,Aquatic foods,Fishes
+297,Atlantic Wolffish,Anarhichas,lupus,Aquatic foods,Fishes
+298,Bamboo Shoots,Phyllostachys,edulis,Vegetables,Shoot vegetables
+299,Striped Bass,Morone,saxatilis,Aquatic foods,Fishes
+301,Beech,Fagus,,Nuts,Nuts
+302,Beluga Whale,Delphinapterus,leucas,Aquatic foods,Cetaceans
+303,Bison,Bison,bison,Animal foods,Bovines
+305,Alaska Blackfish,Dallia,pectoralis,Aquatic foods,Fishes
+306,Blue Crab,Callinectes,sapidus,Aquatic foods,Crustaceans
+307,Blue Mussel,Mytilus,edulis,Aquatic foods,Mollusks
+308,Atlantic Bluefin Tuna,Thunnus,thynnus,Aquatic foods,Fishes
+309,Bluefish,Pomatomus,saltatrix,Aquatic foods,Fishes
+310,Wild Boar,Sus,scrofa,Animal foods,Swine
+311,Bowhead Whale,Balaena,mysticetus,Aquatic foods,Cetaceans
+312,Breadfruit,Artocarpus,altilis,Fruits,Tropical fruits
+314,Rapini,Brassica,rapa,Vegetables,Cabbages
+316,Water Buffalo,Bubalus,bubalis,Animal foods,Bovines
+317,Burbot,Lota,lota,Aquatic foods,Fishes
+318,Butterbur,Petasites,japonicus,Vegetables,Other vegetables
+319,American Butterfish,Peprilus,triacanthus,Aquatic foods,Fishes
+320,Butternut,Juglans,cinerea,Nuts,Nuts
+321,Butternut Squash,Cucurbita,moschata,Gourds,Gourds
+322,Calabash,Lagenaria,siceraria,Gourds,Gourds
+323,Cardoon,Cynara,cardunculus,Vegetables,Shoot vegetables
+325,Natal Plum,Carissa,macrocarpa,Fruits,Tropical fruits
+326,Carob,Ceratonia,siliqua,Vegetables,Other vegetables
+327,Common Carp,Cyprinus,carpio,Aquatic foods,Fishes
+328,Cassava,Manihot,esculenta,Vegetables,Tubers
+329,Channel Catfish,Ictalurus,punctatus,Aquatic foods,Fishes
+330,Chayote,Sicyos,edulis,Gourds,Gourds
+331,Cherimoya,Annona,cherimola,Fruits,Tropical fruits
+332,Chervil,Anthriscus,cerefolium,Herbs and Spices,Spices
+333,Chia Seeds,Salvia,hispanica,Herbs and Spices,Other seeds
+334,Chicken,Gallus,gallus,Animal foods,Poultry
+335,Chinese Broccoli,Brassica,oleracea,Vegetables,Cabbages
+336,Chinese Chestnut,Castanea,mollissima,Nuts,Nuts
+337,Chinese Water Chestnut,Eleocharis,dulcis,Vegetables,Other vegetables
+338,Garland Chrysanthemum,Glebionis,coronaria,Vegetables,Leaf vegetables
+339,Cisco,Coregonus,artedi,Aquatic foods,Fishes
+340,Nuttall's Cockle,Clinocardium,nuttallii,Aquatic foods,Mollusks
+341,Coconut,Cocos,nucifera,Fruits,Tropical fruits
+342,Pacific Cod,Gadus,macrocephalus,Aquatic foods,Fishes
+343,Atlantic Cod,Gadus,morhua,Aquatic foods,Fishes
+344,Common Octopus,Octopus,vulgaris,Aquatic foods,Mollusks
+345,Corn Salad,Valerianella,locusta,Vegetables,Leaf vegetables
+346,Cottonseed,Gossypium,,Herbs and Spices,Oilseed crops
+347,Catjang,Vigna,cylindrica,Pulses,Peas
+348,"Malus sp. (Apple, Crabapple etc.)",Malus,,Fruits,Pomes
+349,Squashberry,Viburnum,edule,Fruits,Berries
+350,Atlantic Croaker,Micropogonias,undulatus,Aquatic foods,Fishes
+351,Cusk (Fish),Brosme,brosme,Aquatic foods,Fishes
+353,Mule Deer,Odocoileus,,Animal foods,Venison
+354,Sculpin,Myoxocephalus,,Aquatic foods,Fishes
+355,"Rumex sp. (Dock, Sorrel)",Rumex,,Herbs and Spices,Herbs
+356,Dolphin Fish,Coryphaena,hippurus,Aquatic foods,Fishes
+357,Freshwater Drum,Aplodinotus,grunniens,Aquatic foods,Fishes
+358,Mallard Duck,Anas,platyrhynchos,Animal foods,Poultry
+359,Dungeness Crab,Metacarcinus,magister,Aquatic foods,Crustaceans
+360,Durian,Durio,zibethinus,Fruits,Tropical fruits
+361,Eastern Oyster,Crassostrea,virginica,Aquatic foods,Mollusks
+362,Freshwater Eel,Anguilla,,Aquatic foods,Fishes
+363,Elderberry,Sambucus,,Fruits,Berries
+364,Elk,Cervus,canadensis,Animal foods,Venison
+365,Emu,Dromaius,novaehollandiae,Animal foods,Poultry
+367,European Anchovy,Engraulis,encrasicolus,Aquatic foods,Fishes
+368,Sweet Chestnut,Castanea,sativa,Nuts,Nuts
+369,Turbot,Scophthalmus,maximus,Aquatic foods,Fishes
+370,Malabar Spinach,Chamaenerion,angustifolium,Herbs and Spices,Herbs
+371,Florida Pompano,Trachinotus,carolinus,Aquatic foods,Fishes
+372,Ginkgo,Ginkgo,biloba,Herbs and Spices,Other seeds
+373,Greylag Goose,Anser,anser,Animal foods,Poultry
+374,Grape,Vitis,,Fruits,Berries
+375,Greenland Halibut,Reinhardtius,hippoglossoides,Aquatic foods,Fishes
+376,Groundcherry,Physalis,,Vegetables,Fruit vegetables
+377,Grouper,Epinephelus,,Aquatic foods,Fishes
+378,Guinea Hen,Numida,meleagris,Animal foods,Poultry
+379,Haddock,Melanogrammus,aeglefinus,Aquatic foods,Fishes
+380,Halibut,Hippoglossus,,Aquatic foods,Fishes
+381,Hazelnut,Corylus,,Nuts,Nuts
+382,Hickory Nut,Carya,,Nuts,Nuts
+383,Horse,Equus,caballus,Animal foods,Equines
+384,Horseradish Tree,Moringa,oleifera,Vegetables,Other vegetables
+385,Alaska Blueberry,Vaccinium,ovalifolium,Fruits,Berries
+386,Hyacinth Bean,Lablab,purpureus,Pulses,Beans
+387,Irish Moss,Chondrus,crispus,Aquatic foods,Seaweed
+388,Pacific Jack Mackerel,Trachurus,symmetricus,Aquatic foods,Fishes
+389,Jackfruit,Artocarpus,heterophyllus,Fruits,Tropical fruits
+390,Japanese Chestnut,Castanea,crenata,Nuts,Nuts
+391,Java Plum,Syzygium,cumini,Fruits,Tropical fruits
+392,Jerusalem Artichoke,Helianthus,tuberosus,Vegetables,Tubers
+393,Jujube,Ziziphus,sp.,Fruits,Other fruits
+394,Jute,Corchorus,olitorius,Vegetables,Leaf vegetables
+396,Kelp,Laminaria,,Aquatic foods,Seaweed
+397,King Mackerel,Scomberomorus,cavalla,Aquatic foods,Fishes
+398,Kumquat,Citrus,,Fruits,Tropical fruits
+399,Lamb's Quarters,Chenopodium,album,Vegetables,Leaf vegetables
+400,Black Leather Chiton,Katharina,tunicata,Aquatic foods,Mollusks
+401,Wild Leek,Allium,ampeloprasum,Vegetables,Onion-family vegetables
+402,Common Ling,Molva,molva,Aquatic foods,Fishes
+403,Lingcod,Ophiodon,elongatus,Aquatic foods,Fishes
+404,American Lobster,Homarus,americanus,Aquatic foods,Crustaceans
+406,Lotus,Nelumbo,,Herbs and Spices,Other seeds
+407,Sacred Lotus,Nelumbo,nucifera,Vegetables,Other vegetables
+408,White Lupine,Lupinus,albus,Pulses,Other pulses
+409,Malabar Spinach,Basella,alba,Vegetables,Leaf vegetables
+411,Purple Mangosteen,Garcinia,mangostana,Fruits,Tropical fruits
+412,Alpine Sweetvetch,Hedysarum,alpinum,Vegetables,Root vegetables
+413,Milkfish,Chanos,chanos,Aquatic foods,Fishes
+414,Monkfish,Lophius,piscatorius,Aquatic foods,Fishes
+416,Moth Bean,Vigna,aconitifolia,Pulses,Beans
+417,Fiveleaf Yam,Dioscorea,pentaphylla,Vegetables,Tubers
+418,Flathead Mullet,Mugil,cephalus,Aquatic foods,Fishes
+420,White Mustard,Sinapis,alba,Herbs and Spices,Spices
+422,New Zealand Spinach,Tetragonia,tetragonoides,Vegetables,Leaf vegetables
+423,Nopal,Nopalea,cochenillifera,Vegetables,Other vegetables
+424,Ocean Pout,Zoarces,americanus,Aquatic foods,Fishes
+425,Giant Pacific Octopus,Enteroctopus,dofleini,Aquatic foods,Mollusks
+426,'ōhelo Berries,Vaccinium,reticulatum,Fruits,Berries
+427,Okra,Abelmoschus,esculentus,Vegetables,Other vegetables
+430,Ostrich,Struthio,camelus,Animal foods,Poultry
+431,Spotted Seal,Phoca,largha,Aquatic foods,Pinnipeds
+432,Pacific Herring,Clupea,pallasii,Aquatic foods,Fishes
+433,Pacific Oyster,Crassostrea,gigas,Aquatic foods,Mollusks
+434,Rockfish,Sebastes,,Aquatic foods,Fishes
+435,Velvet Scoter,Melanitta,fusca,Animal foods,Poultry
+436,"Pepper Cultivar (Piri Piri, Tabasco etc.)",Capsicum,annuum,Vegetables,Fruit vegetables
+437,Common Persimmon,Diospyros,virginiana,Fruits,Tropical fruits
+438,Pheasant,Phasianus,colchicus,Animal foods,Poultry
+439,Northern Pike,Esox,lucius,Aquatic foods,Fishes
+440,Pili Nut,Canarium,ovatum,Nuts,Nuts
+441,Colorado Pinyon,Pinus,edulis,Nuts,Nuts
+442,Suriname Cherry,Eugenia,uniflora,Fruits,Tropical fruits
+443,Plains Pricklypear,Opuntia,macrorhiza,Fruits,Tropical fruits
+444,Plantain,Musa,Musa x paradisiaca,Fruits,Tropical fruits
+445,American Pokeweed,Phytolacca,americana,Vegetables,Shoot vegetables
+447,Opium Poppy,Papaver,somniferum,Herbs and Spices,Spices
+448,Prairie Turnip,Pediomelum,esculentum,Vegetables,Root vegetables
+449,Prickly Pear,Opuntia,,Fruits,Tropical fruits
+450,Quinoa,Chenopodium,quinoa,Herbs and Spices,Other seeds
+451,European Rabbit,Oryctolagus,,Animal foods,Lagomorphs
+453,Rainbow Smelt,Osmerus,mordax,Aquatic foods,Fishes
+454,Rainbow Trout,Oncorhynchus,mykiss,Aquatic foods,Fishes
+455,Malabar Plum,Syzygium,jambos,Fruits,Tropical fruits
+456,Rose Hip,Rosa,,Herbs and Spices,Herbs
+457,Roselle,Hibiscus,sabdariffa,Herbs and Spices,Herbs
+458,Orange Roughy,Hoplostethus,atlanticus,Aquatic foods,Fishes
+459,Sablefish,Anoplopoma,fimbria,Aquatic foods,Fishes
+460,Pink Salmon,Oncorhynchus,gorbuscha,Aquatic foods,Fishes
+461,Chum Salmon,Oncorhynchus,keta,Aquatic foods,Fishes
+462,Coho Salmon,Oncorhynchus,kisutch,Aquatic foods,Fishes
+463,Sockeye Salmon,Oncorhynchus,nerka,Aquatic foods,Fishes
+464,Chinook Salmon,Oncorhynchus,tshawytscha,Aquatic foods,Fishes
+465,Atlantic Salmon,Salmo,salar,Aquatic foods,Fishes
+466,Salmonberry,Rubus,spectabilis,Fruits,Berries
+467,Salsify,Tragopogon,porrifolius,Vegetables,Root vegetables
+468,Sapodilla,Manilkara,zapota,Fruits,Tropical fruits
+469,Mamey Sapote,Pouteria,sapota,Fruits,Tropical fruits
+470,Spanish Mackerel,Scomberomorus,maculatus,Aquatic foods,Fishes
+471,Pacific Sardine,Sardinops,sagax,Aquatic foods,Fishes
+473,Scup,Stenotomus,chrysops,Aquatic foods,Fishes
+474,Sea Cucumber,Apostichopus,californicus,Aquatic foods,Other aquatic foods
+475,Steller Sea Lion,Eumetopias,jubatus,Aquatic foods,Pinnipeds
+476,Bearded Seal,Erignathus,barbatus,Aquatic foods,Pinnipeds
+477,Ringed Seal,Pusa,hispida,Aquatic foods,Pinnipeds
+478,"Cynoscion sp. (Weakfish, Seatrout, Corvina etc.)",Cynoscion,,Aquatic foods,Fishes
+479,Prickly Sesban,Sesbania,bispinosa,Vegetables,Other vegetables
+480,American Shad,Alosa,sapidissima,Aquatic foods,Fishes
+482,Sheefish,Stenodus,leucichthys,Aquatic foods,Fishes
+483,Sheep,Ovis,aries,Animal foods,Ovis
+484,Sheepshead,Archosargus,probatocephalus,Aquatic foods,Fishes
+485,Hedge Mustard,Sisymbrium,,Herbs and Spices,Other seeds
+486,Skipjack Tuna,Katsuwonus,pelamis,Aquatic foods,Fishes
+488,Soursop,Annona,muricata,Fruits,Tropical fruits
+489,Spelt,Triticum,spelta,Cereals and cereal products,Cereals
+491,Squab,Columba,,Animal foods,Poultry
+493,Strawberry Guava,Psidium,cattleyanum,Fruits,Berries
+494,Sturgeon,Acipenser,,Aquatic foods,Fishes
+495,White Sucker,Catostomus,commersonii,Aquatic foods,Fishes
+496,Sugar Apple,Annona,squamosa,Fruits,Tropical fruits
+497,Pumpkinseed,Lepomis,gibbosus,Aquatic foods,Fishes
+498,Swordfish,Xiphias,gladius,Aquatic foods,Fishes
+499,Taro,Colocasia,esculenta,Vegetables,Root vegetables
+500,Teff,Eragrostis,tef,Herbs and Spices,Herbs
+502,Mexican Groundcherry,Physalis,philadelphica,Vegetables,Fruit vegetables
+503,Luffa,Luffa,aegyptiaca,Gourds,Gourds
+505,Wild Turkey,Meleagris,gallopavo,Animal foods,Poultry
+506,Cattle,Bos,taurus,Animal foods,Bovines
+507,Walleye,Sander,vitreus,Aquatic foods,Fishes
+508,Alaska Pollock,Gadus,chalcogrammus,Aquatic foods,Fishes
+509,Wasabi,Eutrema,japonicum,Herbs and Spices,Spices
+510,Wax Gourd,Benincasa,hispida,Gourds,Gourds
+512,Pollock,Pollachius,virens,Aquatic foods,Fishes
+513,Broad Whitefish,Coregonus,nasus,Aquatic foods,Fishes
+514,Whitefish,Coregonus,,Aquatic foods,Fishes
+515,Whiting,Merlangius,merlangus,Aquatic foods,Fishes
+516,Wild Rice,Zizania,,Cereals and cereal products,Cereals
+517,Tealeaf Willow,Salix,pulchra,Herbs and Spices,Herbs
+518,Winged Bean,Psophocarpus,tetragonolobus,Pulses,Beans
+519,Yam,Dioscorea,,Vegetables,Tubers
+520,Jicama,Pachyrhizus,erosus,Vegetables,Root vegetables
+521,Arrowleaf Elephant's Ear,Xanthosoma,sagittifolium,Vegetables,Leaf vegetables
+522,Yellowfin Tuna,Thunnus,albacares,Aquatic foods,Fishes
+523,Yellowtail Amberjack,Seriola,lalandi,Aquatic foods,Fishes
+524,Pollock,Pollachius,,Aquatic foods,Fishes
+525,Albacore Tuna,Thunnus,alalunga,Aquatic foods,Fishes
+526,Cod,Gadus,,Aquatic foods,Fishes
+527,Atlantic Halibut,Hippoglossus,hippoglossus,Aquatic foods,Fishes
+528,Pacific Halibut,Hippoglossus,stenolepis,Aquatic foods,Fishes
+529,Pacific Salmon,Oncorhynchus,,Aquatic foods,Fishes
+533,Snow Crab,Chionoecetes,opilio,Aquatic foods,Crustaceans
+534,Black-eyed Pea,Vigna,unguiculata,Pulses,Peas
+536,Macadamia Nut,Macadamia,,Nuts,Nuts
+541,Domestic Goat,Capra,hircus,Animal foods,Caprae
+542,Beefalo,,Bos taurus x Bison bison,Animal foods,Bovines
+549,Domestic Pig,Sus,scrofa,Animal foods,Swine
+550,Walrus,Odobenus,rosmarus,Aquatic foods,Pinnipeds
+551,Alpine Knotweed,Koenigia,alpina,Vegetables,Stalk vegetables
+552,Khorasan Wheat,Triticum,turgidum,Cereals and cereal products,Cereals
+553,Chinese Long Bean,Vigna,unguiculata,Pulses,Peas
+557,Persian Lime,Citrus,Citrus x latifolia,Fruits,Citrus
+558,Feijoa,Acca,sellowiana,Fruits,Tropical fruits
+560,Jelly Ear,Auricularia,auricula-judae,Vegetables,Mushrooms
+561,Portobello,Agaricus,bisporus,Vegetables,Mushrooms
+562,Shiitake,Lentinula,edodes,Vegetables,Mushrooms
+564,Wakame,Undaria,pinnatifida,Aquatic foods,Seaweed
+565,Enoki,Flammulina,velutipes,Vegetables,Mushrooms
+566,Epazote,Dysphania,ambrosioides,Herbs and Spices,Herbs
+567,Oyster Mushroom,Pleurotus,ostreatus,Vegetables,Mushrooms
+568,Cloud Ear Fungus,Auricularia,polytricha,Vegetables,Mushrooms
+569,Maitake,Grifola,frondosa,Vegetables,Mushrooms
+570,Ostrich Fern,Matteuccia,struthiopteris,Vegetables,Leaf vegetables
+571,Spot Croaker,Leiostomus,xanthurus,Aquatic foods,Fishes
+572,Arctic Dock,Rumex,arcticus,Herbs and Spices,Herbs
+574,Atlantic Menhaden,Brevoortia,tyrannus,Aquatic foods,Fishes
+575,Wheat,Triticum,,Cereals and cereal products,Cereals
+576,Common Chokecherry,Prunus,virginiana,Fruits,Drupes
+577,Agave,Agave,,Vegetables,Other vegetables
+578,Narrowleaf Cattail,Typha,angustifolia,Vegetables,Other vegetables
+581,Blue Whiting,Micromesistius,poutassou,Aquatic foods,Fishes
+582,Carp Bream,Abramis,brama,Aquatic foods,Fishes
+583,Chanterelle,Cantharellus,cibarius,Vegetables,Mushrooms
+585,Char,Salvelinus,,Aquatic foods,Fishes
+586,Cinnamon,Cinnamomum,,Herbs and Spices,Spices
+588,Common Dab,Limanda,limanda,Aquatic foods,Fishes
+589,Spiny Dogfish,Squalus,acanthias,Aquatic foods,Fishes
+595,Mountain Hare,Lepus,timidus,Animal foods,Lagomorphs
+596,Lake Trout,Salvelinus,namaycush,Aquatic foods,Fishes
+597,Lemon Sole,Microstomus,kitt,Aquatic foods,Fishes
+602,Norway Haddock,Sebastes,viviparus,Aquatic foods,Fishes
+603,Norway Lobster,Nephrops,norvegicus,Aquatic foods,Crustaceans
+604,Norway Pout,Trisopterus,esmarkii,Aquatic foods,Fishes
+605,Oil Palm,Elaeis,,Herbs and Spices,Oilseed crops
+607,Sago Palm,Metroxylon,sagu,Herbs and Spices,Oilseed crops
+608,Persimmon,Diospyros,,Fruits,Tropical fruits
+609,Pikeperch,Sander,lucioperca,Aquatic foods,Fishes
+611,Rock Ptarmigan,Lagopus,muta,Animal foods,Poultry
+612,Pacific Ocean Perch,Sebastes,alutus,Aquatic foods,Fishes
+616,Kombu,Saccharina,japonica,Aquatic foods,Seaweed
+620,Thistle,Cirsium,,Vegetables,Root vegetables
+621,Tuna,Thunnus,,Aquatic foods,Fishes
+622,Walnut,Juglans,,Nuts,Nuts
+726,Green Sea Turtle,Chelonia,mydas,Aquatic foods,Other aquatic foods
+748,Hibiscus Tea,Hibiscus,sabdariffa,Teas,Herbal teas
+786,Horned Melon,Cucumis,metuliferus,Gourds,Gourds
+797,Canola,Brassica,napus,Herbs and spices,Oilseed crops
+798,Babassu,Attalea,speciosa,Herbs and Spices,Oilseed crops
+799,Cupuaçu,Theobroma,grandiflorum,Herbs and Spices,Oilseed crops
+800,Shea Tree,Vitellaria,paradoxa,Herbs and Spices,Oilseed crops
+801,Tea-oil Camellia,Camellia,oleifera,Herbs and Spices,Oilseed crops
+813,Nance,Byrsonima,crassifolia,Fruits,Tropical fruits
+814,Naranjilla,Solanum,quitoense,Fruits,Tropical fruits
+849,Greenthread,Thelesperma,,Teas,Herbal teas
+863,Yellow Pond Lily,Nuphar,lutea,Herbs and Spices,Herbs
+879,"Pepper Cultivar (Rocoto, Canário etc.)",Capsicum,pubescens,Vegetables,Fruit vegetables
+880,Garlic,Allium,sativum,Herbs and Spices,Herbs
+881,Cabbage,Brassica,oleracea,Vegetables,Cabbages
+882,Chinese Bayberry,Morella,rubra,Fruits,Berries
+887,"Brassica sp. (Mustard, Cabbage Cultivars)",Brassica,,Vegetables,Brassicas
+909,"Pepper Cultivar (Bell, Cayenne, Jalapeño, etc.)",Capsicum,annuum,Vegetables,Fruit vegetables
+910,"Pepper Cultivar (Bell, Cayenne, Jalapeño, etc.)",Capsicum,annuum,Vegetables,Fruit vegetables
+911,"Pepper Cultivar (Bell, Cayenne, Jalapeño, etc.)",Capsicum,annuum,Vegetables,Fruit vegetables
+912,"Pepper Cultivar (Bell, Cayenne, Jalapeño, etc.)",Capsicum,annuum,Vegetables,Fruit vegetables
+913,Italian Sweet Pepper,Capsicum,annuum,Vegetables,Fruit vegetables
+914,Common Bean,Phaseolus,vulgaris,Pulses,Beans
+915,Common Bean,Phaseolus,vulgaris,Pulses,Beans
+916,Western Serviceberry,Amelanchier,alnifolia,Fruits,Berries
+917,Nanjing Cherry,Prunus,tomentosa,Fruits,Berries
+918,Kabocha,Cucurbita,maxima,Gourds,Gourds
