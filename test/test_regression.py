@@ -40,7 +40,7 @@ class TestRegression(unittest.TestCase):
             "C(Status) + Activity + Microbial_load + Statin*{independent_feature}"
         
         with self.assertRaises(ValueError):
-            linear_regression_results(['HMG'], ['C(Status)'],
+            linear_regression_results(['HMG'], ['Status'],
                                       formula_string, df, df, metabolite_anns=False)
 
 if __name__ == '__main__':
