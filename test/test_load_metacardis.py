@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from unittest.mock import patch
 from functools import reduce
+from maxstat.load_metacardis import load_metacardis
 
 class TestLoadAndMergeCSVs(unittest.TestCase):
 
