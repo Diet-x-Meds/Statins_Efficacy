@@ -1,8 +1,8 @@
 import pandas as pd
 
-def diet_distr(df):
+def reshape_diet_data(df):
     """ This is a function that takes in a dataframe of diet distribution data, reformats it, 
-    and outputs some tables with counts"""
+    and outputs the reformatted dataframe"""
     # Replace 'Herbs and spices' with 'Herbs and Spices'
     df['food_group'] = df['food_group'].replace('Herbs and spices', 'Herbs and Spices')
 
@@ -29,37 +29,4 @@ def diet_distr(df):
     # Reset index to make sample_id a column again
     reshaped_df = reshaped_df.reset_index()
 
-    #Dynamically create the list of columns for food_group, food_subgroup, and wikipedia_id
-    food_group_columns = [f'food_group_{i:.1f}' for i in range(1, 32)]  # Adjust according to the actual number of food groups
-    food_subgroup_columns = [f'food_subgroup_{i:.1f}' for i in range(1, 32)]  # Adjust according to the actual number of subgroups
-    wikipedia_id_columns = [f'wikipedia_id_{i:.1f}' for i in range(1, 32)]  # Adjust according to the actual number of IDs
-    
-    #Select only the relevant columns
-    food_group_data = reshaped_df[food_group_columns]
-    food_subgroup_data = reshaped_df[food_subgroup_columns]
-    wikipedia_id_data = reshaped_df[wikipedia_id_columns]
-    
-    #Flatten the food group data
-    flattened_food_groups = food_group_data.values.flatten()
-    flattened_food_subgroups = food_subgroup_data.values.flatten()
-    flattened_wikipedia_id = wikipedia_id_data.values.flatten()
-    
-    #Count how many times each food group appears
-    food_group_counts = pd.Series(flattened_food_groups).value_counts()
-    food_subgroup_counts = pd.Series(flattened_food_subgroups).value_counts()
-    wikipedia_id_counts = pd.Series(flattened_wikipedia_id).value_counts()
-
-    food_group_counts_df = food_group_counts.reset_index()
-    food_group_counts_df.columns = ['food_group', 'count']  # Rename columns for clarity
-    
-    food_subgroup_counts_df = food_subgroup_counts.reset_index()
-    food_subgroup_counts_df.columns = ['food_subgroup', 'count']  # Rename columns for clarity
-    
-    wikipedia_id_counts_df = wikipedia_id_counts.reset_index()
-    wikipedia_id_counts_df.columns = ['wikipedia_id', 'count']
-
-    food_group_counts_df['percentage_of_total'] = (food_group_counts_df['count'] / food_group_counts_df['count'].sum()) * 100
-    food_subgroup_counts_df['percentage_of_total'] = (food_subgroup_counts_df['count']/food_subgroup_counts_df['count'].sum()) * 100
-    wikipedia_id_counts_df['percentage_of_total'] = (wikipedia_id_counts_df['count'] / wikipedia_id_counts_df['count'].sum()) * 100
-
-    return food_group_counts_df
+    return reshaped_df
