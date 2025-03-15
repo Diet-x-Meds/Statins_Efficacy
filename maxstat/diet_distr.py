@@ -1,6 +1,6 @@
 import pandas as pd
 
-def reshape_diet_data(df):
+def diet_distr(df):
     """ This is a function that takes in a dataframe of diet distribution data, reformats it, 
     and outputs the reformatted dataframe"""
     # Replace 'Herbs and spices' with 'Herbs and Spices'

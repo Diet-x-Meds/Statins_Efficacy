@@ -3,8 +3,8 @@ import pandas as pd
 def diet_tables(df):
     """ takes reshaped dataframe and outputs some tables about the foods"""
 
-    #gets the re_shaped food dataframe using the reshape_diet_data function
-    reshaped_df = reshape_diet_data(df)
+    #gets the re_shaped food dataframe using the diet_distr function
+    reshaped_df = diet_distr(df)
 
     #create the list of columns for food_group, food_subgroup, and wikipedia_id
     food_group_columns = [f'food_group_{i:.1f}' for i in range(1, 32)]  # Adjust according to the actual number of food groups
