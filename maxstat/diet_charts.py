@@ -1,3 +1,6 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
 def diet_charts(df):
     """
     This function generates pie charts for food group distribution, food subgroup distribution,

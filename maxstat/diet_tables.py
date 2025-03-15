@@ -1,3 +1,5 @@
+import pandas as pd
+
 def diet_tables(df):
     """ takes reshaped dataframe and outputs some tables about the foods"""
 
