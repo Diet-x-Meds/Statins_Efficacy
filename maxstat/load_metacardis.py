@@ -1,5 +1,4 @@
 import pandas as pd
-from skbio.stats.composition import clr
 import numpy as np
 import scipy.stats
 from functools import reduce
