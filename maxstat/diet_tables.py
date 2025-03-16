@@ -1,4 +1,5 @@
 import pandas as pd
+from maxstat.diet_tables import diet_tables
 
 def diet_tables(df):
     """ takes reshaped dataframe and outputs some tables about the foods"""
