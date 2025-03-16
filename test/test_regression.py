@@ -1,6 +1,6 @@
 import pandas as pd
 import unittest
-from maxstat.regression import linear_regression_results
+from regression import linear_regression_results
 
 class TestRegression(unittest.TestCase):
 
@@ -11,7 +11,7 @@ class TestRegression(unittest.TestCase):
             formula_string = "{dependent_feature} ~ C(Gender) + Age + BMI + C(Nationality) +" \
             "C(Status) + Activity + Microbial_load + Statin*{independent_feature}"
             result = linear_regression_results(['HMG'], ['clostridium_bolteae_cag00008'],
-                              formula_string, df, df, metabolite_anns=False)
+                              formula_string, df)
         except Exception as e:
             self.fail(f"linear_regression_results raised an exception: {e}")
 
@@ -19,14 +19,13 @@ class TestRegression(unittest.TestCase):
         """Test that output DataFrame contains expected columns"""
         df = pd.read_csv('./data/microbes_cov.csv')
         expected_cols = ["dependent_feature", "independent_feature",
-                         "beta", "t_statistic", "p", "n", "r2_train",
-                         "r2_test", "formula"]
+                         "beta", "t_statistic", "p", "n","formula"]
 
         formula_string = "{dependent_feature} ~ C(Gender) + Age + BMI + C(Nationality) +" \
             "C(Status) + Activity + Microbial_load + Statin*{independent_feature}"
 
         associations = linear_regression_results(['HMG'], ['clostridium_bolteae_cag00008'],
-                              formula_string, df, df, metabolite_anns=False)
+                              formula_string, df)
         
         # Check if all expected columns exist in associations DataFrame
         self.assertTrue(set(expected_cols).issubset(set(associations.columns)),
@@ -37,11 +36,13 @@ class TestRegression(unittest.TestCase):
         df = pd.read_csv('./data/microbes_cov.csv')
 
         formula_string = "{dependent_feature} ~ C(Gender) + Age + BMI + C(Nationality) +" \
-            "C(Status) + Activity + Microbial_load + Statin*{independent_feature}"
-        
+            "+ Activity + Microbial_load + Statin*{independent_feature}"
+
         with self.assertRaises(ValueError):
+            # Status is a categorical variable
+            # Passing it in as the independent feature will raise error
             linear_regression_results(['HMG'], ['Status'],
-                                      formula_string, df, df, metabolite_anns=False)
+                                      formula_string, df)
 
 if __name__ == '__main__':
     unittest.main()
