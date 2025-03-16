@@ -26,7 +26,7 @@ class TestDescribeDataframe(unittest.TestCase):
         # Load dataframe
         df = pd.read_csv('./data/combined_food_abundance.csv')
         # Feed in the dataframe and check that it throws a ValueError when an invalid column is requested
-        with self.assertRaises(ValueError):
+        with self.assertRaises(KeyError):
             food_group_counts_df, food_subgroup_counts_df, wikipedia_id_counts_df = diet_tables(df)
             food_group = wikipedia_id_counts_df["food_group"].tolist()
 
