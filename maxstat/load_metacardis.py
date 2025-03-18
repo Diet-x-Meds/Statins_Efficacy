@@ -23,10 +23,10 @@ def load_and_merge_csvs(*choices):
         raise ValueError("You must provide at least 2 and no more than 4 dataset choices.")
     
     # Load datasets
-    clients = pd.read_csv("clients.csv")
-    microbes = pd.read_csv("microbes.csv")
-    metabolites = pd.read_csv("metabolites.csv")
-    food_abundance = pd.read_csv("transformed_diet_df.csv")
+    clients = pd.read_csv("data/clients.csv")
+    microbes = pd.read_csv("data/microbes.csv")
+    metabolites = pd.read_csv("data/metabolites.csv")
+    food_abundance = pd.read_csv("data/transformed_diet_df.csv")
 
     # Function to apply CLR transformation after handling zeros
     def apply_clr(df, features, zero_threshold):
@@ -53,14 +53,11 @@ def load_and_merge_csvs(*choices):
 
     # Prep microbes dataframe
     microbes.columns = microbes.columns.str.replace('.', '_')
-    microbes = microbes.rename(columns={"Microbial load": "Microbial_load"})
-    microbes = microbes.drop(columns=["MGS count", "Gene count"])
     microbes = microbes.dropna()
     microbe_features = microbes.columns[3:].tolist()
     microbes = microbes.rename(columns={col: col.lower() for col in microbe_features})
     microbe_features = [microbe.lower() for microbe in microbe_features]
     microbes = microbes.drop_duplicates(subset=['ID'])
-    microbes = microbes.drop(columns=["Microbial_load"])
 
     # Apply CLR transformation to microbes
     microbes = apply_clr(microbes, microbe_features, zero_threshold=0.90)

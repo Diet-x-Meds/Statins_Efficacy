@@ -1,5 +1,5 @@
 def plot_metadata(df):
-    '''This function plots graphs describing the metadata (in our case, Metacardis)'''
+    '''This function plots graphs describing the metadata'''
 
     import pandas as pd
     import matplotlib.pyplot as plt

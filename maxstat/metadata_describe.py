@@ -1,6 +1,6 @@
 # Made with help from ChatGPT
 def metadata_describe(df):
-    '''This function takes in the provided dataframe (in our case, the MEDI-prepared metacardis data) and outputs a dataframe 
+    '''This function takes in the provided dataframe (in our case the metacardis data) and outputs a dataframe 
        containing descriptive statistics for numerical, categorical, and binary medication columns.
        The output DataFrame has statistics as rows and original column names as columns.'''
 

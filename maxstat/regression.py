@@ -13,8 +13,7 @@ def linear_regression_results(dependent_features, independent_features,
     --------
     Input: (1) list of dependent features, (2) list of independent
     features, (3) `str` specifying the linear regression formula 
-    to use, (4) df of data to use for fitting the model, and (5) 
-    df of data to test fit. 
+    to use, (4) df of data to use for fitting the model. 
     --------
     Output: df containing summary statistics for our association.
     The df will specify formula, dependent, and independent features

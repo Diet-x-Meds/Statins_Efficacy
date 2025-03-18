@@ -1,6 +1,6 @@
 import pandas as pd
 import unittest
-from regression import linear_regression_results
+from maxstat.regression import linear_regression_results
 
 class TestRegression(unittest.TestCase):
 

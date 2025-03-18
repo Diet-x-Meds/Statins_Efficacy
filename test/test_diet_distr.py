@@ -16,16 +16,17 @@ class TestDescribeDataframe(unittest.TestCase):
         # Load dataframe
         df = pd.read_csv('./data/combined_food_abundance.csv')
         # Feed in the dataframe and check that it gives the requested column
-        diet_df = diet_distr(df["food_group_1.0"])
-        self.assertTrue("food_group_1.0" in diet_df.index)
+        diet_df = diet_distr(df)
+        self.assertTrue("food_group_1.0" in diet_df.columns)
 
     def test_edge(self):
         """test for unexpected column in dataframe; should fail""" 
         # Load dataframe
         df = pd.read_csv('./data/combined_food_abundance.csv')
         # Feed in the dataframe and check that it throws a ValueError when an invalid column is requested
-        with self.assertRaises(ValueError):
-            diet_df = diet_distr(df["dratini"])
+        with self.assertRaises(KeyError):
+            diet_df = diet_distr(df)
+            dratini = diet_df["dratini"].tolist()
 
 if __name__ == '__main__':
     unittest.main()
