@@ -1,6 +1,6 @@
 import pandas as pd
 import unittest
-from maxstat.diet_distr import diet_distr
+from maxstat.diet_tables import diet_tables
 
 class TestDescribeDataframe(unittest.TestCase):
 
@@ -9,24 +9,26 @@ class TestDescribeDataframe(unittest.TestCase):
         # Load dataframe
         df = pd.read_csv('./data/combined_food_abundance.csv')
         # Feed in the dataframe and ensure it doesn't go up in smoke
-        diet_distr(df)
+        diet_tables(df)
 
     def test_one_shot(self):
-        """ test to see if expected column in outputed dataframe"""
+        """ test to see outputted dataframe is expected shape"""
         # Load dataframe
         df = pd.read_csv('./data/combined_food_abundance.csv')
-        # Feed in the dataframe and check that it gives the requested column
-        diet_df = diet_distr(df)
-        self.assertTrue("food_group_1.0" in diet_df.columns)
-
+        # Feed in the dataframe to the function
+        food_group_counts_df, food_subgroup_counts_df, wikipedia_id_counts_df = diet_tables(df)
+        # Assert that food_group_counts_df has the expected shape 
+        expected_shape = (13, 3)  
+        self.assertEqual(food_group_counts_df.shape, expected_shape)
+        
     def test_edge(self):
         """test for unexpected column in dataframe; should fail""" 
         # Load dataframe
         df = pd.read_csv('./data/combined_food_abundance.csv')
         # Feed in the dataframe and check that it throws a ValueError when an invalid column is requested
         with self.assertRaises(KeyError):
-            diet_df = diet_distr(df)
-            dratini = diet_df["dratini"].tolist()
+            food_group_counts_df, food_subgroup_counts_df, wikipedia_id_counts_df = diet_tables(df)
+            food_group = wikipedia_id_counts_df["food_group"].tolist()
 
 if __name__ == '__main__':
     unittest.main()
