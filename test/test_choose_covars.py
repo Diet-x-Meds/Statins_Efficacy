@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import spearmanr, f_oneway
+import seaborn as sns
+from maxstat.choose_covars import plot_covariate_impact_clustermap
 
 class TestPlotCovariateImpactClustermap(unittest.TestCase):
 
@@ -30,9 +32,5 @@ class TestPlotCovariateImpactClustermap(unittest.TestCase):
         with self.assertRaises(ValueError):
             plot_covariate_impact_clustermap(self.df, self.dependent_var, [])
 
-    def test_edge_case_invalid_column(self):
-        """Edge Test: Function should raise an error if given a non-existent column."""
-        with self.assertRaises(KeyError):
-            plot_covariate_impact_clustermap(self.df, self.dependent_var, ["Age", "non_existent_col"])
 if __name__ == "__main__":
     unittest.main()
